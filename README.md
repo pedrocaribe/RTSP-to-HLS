@@ -120,3 +120,6 @@ If the script fails at any step, check the log file (`/var/log/rtsp_to_hls_insta
 ## License
 
 This project is licensed under the MIT License.
+
+## Author
+Created by Pedro Caribe. For any questions or suggestions, feel free to contact me at dev.pcaribe@gmail.com
