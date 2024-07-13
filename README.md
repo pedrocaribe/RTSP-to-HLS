@@ -1,3 +1,6 @@
+# RTSP-to-HLS
+Script that automates the installation and configuration of a service that converts RTSP streams to HLS using FFmpeg and Nginx. Developed for use with Mainsail
+
 # RTSP to HLS Conversion Service
 
 This script automates the installation and configuration of a service that converts RTSP streams to HLS using FFmpeg and Nginx. It provides an option to edit the RTSP camera information as well.
