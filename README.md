@@ -51,6 +51,34 @@ The service script provides options to start, stop, restart, and check the statu
 sudo /etc/init.d/rtsp_to_hls {start|stop|restart|status}
 ```
 
+## Usage
+
+To access the camera stream, open your web browser and navigate to:
+
+```http
+http://{server_ip}:8888/hls/stream.m3u8
+```
+
+Replace `{server_ip}` with the IP address of the server where the service is installed.
+
+## Configuration on Mainsail/Klipper
+
+1. Click the gears icon on the top right corner of the Mainsail interface.
+2. Click on "Webcams".
+3. Click on "Add Webcam".
+4. Define a name for your webcam.
+5. Under "URL Stream", paste the following URL:
+
+    ```http
+    http://{server_ip}:8888/hls/stream.m3u8
+    ```
+
+    Replace `{server_ip}` with the IP address of the server where the service is installed.
+
+6. Leave "URL Snapshot" with default values.
+7. Under "Service", choose "HLS Stream".
+8. Click "Save Webcam".
+
 ## Detailed Description of the Script
 
 ### Logging Function
@@ -122,4 +150,5 @@ If the script fails at any step, check the log file (`/var/log/rtsp_to_hls_insta
 This project is licensed under the MIT License.
 
 ## Author
-Created by Pedro Caribe. For any questions or suggestions, feel free to contact me at dev.pcaribe@gmail.com
+
+Created by Pedro Caribe. For any questions or suggestions, feel free to contact me at dev.pcaribe@gmail.com.
