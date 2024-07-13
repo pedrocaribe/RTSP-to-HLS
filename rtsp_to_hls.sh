@@ -142,7 +142,16 @@ OUTPUT_DIR="/usr/share/nginx/html/hls"
 LOG_FILE="/var/log/rtsp_to_hls.log" # Log File
 PID_FILE="/var/run/rtsp_to_hls.pid" # PID File to keep track if process is running
 
+
+check_network() {
+    while ! ping -c 1 -W 1 8.8.8.8 > /dev/null; do
+        echo "Waiting for network connection..."
+        sleep 5
+    done
+}
+
 start() {
+        check_network
         echo "Starting RTSP to HLS conversion..."
         echo "\$(date): Starting RTSP to HLS conversion..." >> \$LOG_FILE
 
