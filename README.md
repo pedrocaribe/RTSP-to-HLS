@@ -61,7 +61,7 @@ http://{server_ip}:8888/hls/stream.m3u8
 
 Replace `{server_ip}` with the IP address of the server where the service is installed.
 
-## Configuration on Mainsail/Klipper
+## Configuration on Mainsail/Moonraker
 
 1. Click the gears icon on the top right corner of the Mainsail interface.
 2. Click on "Webcams".
